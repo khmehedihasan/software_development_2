@@ -1,0 +1,37 @@
+/* ----------css for print----------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Play&display=swap');
+
+
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Play', sans-serif;
+}
+
+.no-printme {
+	background-color: rgb(255, 134, 53);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+@media print {
+	.no-printme  {
+		display: none;
+	}
+	.printme  {
+		display: block;
+	}
+}
+
+.lgin{
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 6px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
